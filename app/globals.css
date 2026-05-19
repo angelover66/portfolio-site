@@ -1,26 +1,43 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* Tailwind v4 自定义主题变量 */
+@theme {
+  --font-sans: 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif;
+  --color-dark: #1a1a2e;
+  --color-accent-from: #6366f1;
+  --color-accent-to: #a855f7;
+}
+
+/* CSS 自定义属性（供 glass-card 等组件使用） */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.4);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 流动渐变背景 */
+.gradient-bg {
+  background: linear-gradient(270deg, #e0e7ff, #f3e8ff, #fce7f3, #e0e7ff);
+  background-size: 400% 400%;
+  animation: gradient-flow 12s ease infinite;
+}
+
+/* 毛玻璃卡片 */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+}
+
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
