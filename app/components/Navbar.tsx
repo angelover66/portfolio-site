@@ -29,7 +29,7 @@ export default function Navbar() {
           </svg>
         </a>
         <a
-          href="mailto:yanglulu@example.com"
+          href="mailto:294053276@qq.com"
           className="transition-colors"
           style={{ color: "rgba(26,26,46,0.6)" }}
           title="Email"
