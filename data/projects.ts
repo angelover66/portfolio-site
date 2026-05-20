@@ -21,7 +21,7 @@ export const projects: Project[] = [
       "额外集成AI PM学习材料定时推送（每日早晚各一次），LLM策展 + URL可访问性验证，macOS系统通知触达。已支持Streamlit Web UI和CLI双交互模式。",
     ],
     techTags: ["Python", "Streamlit", "DeepSeek API", "macOS Notification"],
-    liveUrl: "https://english-agent.streamlit.app",
+    liveUrl: "https://english-agent-gp3jehtasegglfowv8grsy.streamlit.app",
     githubUrl: "https://github.com/angelover66/english-agent",
   },
   {
@@ -35,7 +35,7 @@ export const projects: Project[] = [
       "面试结束后提供5维度量化评估（逻辑架构/B端思维/数据意识/岗位匹配度/表达质量），含具体改进建议和示范回答。已部署Streamlit Cloud，通用版无需定制即可使用。",
     ],
     techTags: ["Python", "Streamlit", "DeepSeek API", "DuckDuckGo"],
-    liveUrl: "https://interview-agent.streamlit.app",
+    liveUrl: "https://interview-agent-tpsouzxk2tksahgbx5eus5.streamlit.app/#96e9abf8",
     githubUrl: "https://github.com/angelover66/interview-agent",
   },
   {
