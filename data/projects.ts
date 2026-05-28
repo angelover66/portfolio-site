@@ -47,7 +47,7 @@ export const projects: Project[] = [
     description: [
       "面向正在准备求职面试的用户，解决「求职过程缺乏系统化打卡记录和进度追踪工具」这一痛点。以微信小程序为载体，零安装门槛，帮助用户记录每日学习/面试进度，追踪面试全流程。",
       "核心功能：每日打卡（记录学习活动、时长、备注、照片），面试流程管理（追踪每轮状态：待面试/已通过/未通过/Offer，获 Offer 后自动冻结防误改），好友组队打卡（邀请微信好友互相监督，共享打卡摘要），个人统计面板（打卡次数、累计时长、面试数、Offer 数）。",
-      "技术实现：微信小程序原生框架（WXML/WXSS/JS），微信云开发 CloudBase（云函数 + 云数据库），手机号一键登录。纯工具型产品，不依赖 LLM。",
+      "技术实现：微信小程序原生框架（WXML/WXSS/JS），微信云开发 CloudBase（云函数 + 云数据库），手机号一键登录。",
     ],
     techTags: ["微信小程序", "CloudBase", "云函数", "WXML"],
     liveUrl: "",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     emoji: "🎵",
     description: [
       "面向琵琶学习者和民乐爱好者，解决「想弹的流行曲没有适配琵琶谱」这一核心痛点。上传任意音乐或视频，自动生成三种难度（低/中/高）的琵琶简谱，并支持琵琶音色模拟播放。",
-      "核心能力：ffmpeg.wasm 浏览器端音频提取，Spotify Basic Pitch 旋律转写，六维度规则引擎编曲（音符密度/节奏/技法/把位/调性/速度），SVG+Canvas 古风谱面渲染，FluidR3 SoundFont 琵琶音色合成。全链路浏览器端离线运行，零后端依赖，零 LLM 调用。",
+      "核心能力：ffmpeg.wasm 浏览器端音频提取，Spotify Basic Pitch 旋律转写，六维度规则引擎编曲（音符密度/节奏/技法/把位/调性/速度），SVG+Canvas 古风谱面渲染，FluidR3 SoundFont 琵琶音色合成。全链路浏览器端离线运行，零后端依赖。",
       "额外提供曲谱库（LocalStorage 持久化）、PNG/JSON/打印三种导出方式、20首预置素材曲目、播放调速等配套功能。",
     ],
     techTags: ["Next.js", "TypeScript", "Basic Pitch", "ffmpeg.wasm", "Web Audio API", "Tailwind CSS"],
