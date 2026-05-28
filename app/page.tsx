@@ -18,11 +18,11 @@ export default function Home() {
       <Hero />
 
       {/* 项目卡片区 */}
-      <section className="max-w-6xl mx-auto px-6 pb-24">
+      <section className="max-w-6xl mx-auto px-6 pb-16">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-2" style={{ color: "#1a1a2e" }}>
           My AI Projects
         </h2>
-        <p className="text-center mb-12 text-sm" style={{ color: "rgba(26,26,46,0.4)" }}>
+        <p className="text-center mb-8 text-sm" style={{ color: "rgba(26,26,46,0.4)" }}>
           作品集持续更新中
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
