@@ -23,7 +23,7 @@ export default function Hero() {
             <img
               src="/avatar.jpg"
               alt="Lulu Yang"
-              className="w-40 md:w-56 rounded-2xl shadow-lg"
+              className="w-40 h-40 md:w-56 md:h-56 rounded-2xl object-cover shadow-lg"
               style={{ border: "3px solid rgba(99,102,241,0.15)" }}
             />
           </motion.div>
