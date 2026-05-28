@@ -12,53 +12,58 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, onClick, index }: ProjectCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ delay: index * 0.12, duration: 0.6 }}
-      whileHover={{ y: -8 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ delay: index * 0.1, duration: 0.5 }}
+      whileHover={{ y: -4 }}
       onClick={onClick}
-      className="glass-card p-6 md:p-8 cursor-pointer"
+      className="glass-card p-6 md:p-8 cursor-pointer flex items-center gap-5 md:gap-8"
       style={{ transition: "box-shadow 0.3s" }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.boxShadow = "0 20px 40px rgba(99,102,241,0.08)";
+        e.currentTarget.style.boxShadow = "0 16px 32px rgba(99,102,241,0.06)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.boxShadow = "";
       }}
     >
-      {/* Emoji + 项目名 */}
-      <div className="flex items-center gap-3 mb-3">
-        <span className="text-3xl">{project.emoji}</span>
-        <h3 className="text-xl font-semibold" style={{ color: "#1a1a2e" }}>
-          {project.name}
-        </h3>
+      {/* Emoji */}
+      <div className="shrink-0 text-4xl md:text-5xl select-none">
+        {project.emoji}
       </div>
 
-      {/* 一句话描述 */}
-      <p className="text-sm mb-4 leading-relaxed" style={{ color: "rgba(26,26,46,0.5)" }}>
-        {project.tagline}
-      </p>
+      {/* 内容 */}
+      <div className="flex-1 min-w-0">
+        {/* 项目名 */}
+        <h3 className="text-lg md:text-xl font-semibold mb-0.5" style={{ color: "#1a1a2e" }}>
+          {project.name}
+        </h3>
 
-      {/* 技术标签 */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.techTags.map((tag) => (
-          <span
-            key={tag}
-            className="px-2.5 py-0.5 rounded-full text-xs font-medium"
-            style={{ backgroundColor: "rgba(99,102,241,0.08)", color: "#6366f1" }}
-          >
-            {tag}
-          </span>
-        ))}
+        {/* 一句话描述 */}
+        <p className="text-sm mb-3 leading-relaxed" style={{ color: "rgba(26,26,46,0.5)" }}>
+          {project.tagline}
+        </p>
+
+        {/* 技术标签 */}
+        <div className="flex flex-wrap gap-2">
+          {project.techTags.map((tag) => (
+            <span
+              key={tag}
+              className="px-2.5 py-0.5 rounded-full text-xs font-medium"
+              style={{ backgroundColor: "rgba(99,102,241,0.08)", color: "#6366f1" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* 查看详情 */}
       <span
-        className="inline-flex items-center gap-1 text-sm font-medium"
-        style={{ color: "#6366f1", transition: "gap 0.2s" }}
+        className="shrink-0 inline-flex items-center gap-1 text-sm font-medium"
+        style={{ color: "#6366f1" }}
       >
-        查看详情
+        <span className="hidden md:inline">查看详情</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>

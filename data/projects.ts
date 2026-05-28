@@ -1,7 +1,9 @@
 export interface Project {
   id: string;
   name: string;
+  nameEn: string;
   tagline: string;
+  taglineEn: string;
   description: string[];
   techTags: string[];
   liveUrl: string;
@@ -14,7 +16,9 @@ export const projects: Project[] = [
   {
     id: "interview-agent",
     name: "B端产品经理面试助手",
+    nameEn: "Interview Copilot",
     tagline: "面试全流程 AI Agent",
+    taglineEn: "AI-Powered Interview Preparation",
     emoji: "💼",
     description: [
       "B端产品经理求职竞争激烈，候选人普遍面临准备缺乏针对性、模拟面试缺少真实反馈、面试过程无系统沉淀三大痛点。本产品提供「素材入库 → 定制准备 → 模拟面试 → 评估反馈」四阶段闭环。",
@@ -28,7 +32,9 @@ export const projects: Project[] = [
   {
     id: "daily-mic",
     name: "Lulu's Daily Mic",
+    nameEn: "Lulu's Daily Mic",
     tagline: "全球化沟通力养成助手",
+    taglineEn: "Daily English Speaking Coach",
     emoji: "🎙️",
     description: [
       "面向雅思6.5分、目标全英文工作环境的AI产品经理，解决「日常口语打卡 + AI PM职业英语」这一垂直场景的练习需求。市面上英语工具或过于基础、或过于学术，缺乏中间地带。",
@@ -42,7 +48,9 @@ export const projects: Project[] = [
   {
     id: "offerwin",
     name: "OfferWin",
+    nameEn: "OfferWin",
     tagline: "求职面试进度追踪微信小程序",
+    taglineEn: "Job Hunt Progress Tracker",
     emoji: "🏆",
     description: [
       "面向正在准备求职面试的用户，解决「求职过程缺乏系统化打卡记录和进度追踪工具」这一痛点。以微信小程序为载体，零安装门槛，帮助用户记录每日学习/面试进度，追踪面试全流程。",
@@ -57,7 +65,9 @@ export const projects: Project[] = [
   {
     id: "pipa-score",
     name: "琵琶简谱自动生成器",
+    nameEn: "Pipa Score Generator",
     tagline: "AI 驱动的琵琶谱生成与演奏工具",
+    taglineEn: "AI-Powered Pipa Sheet Music",
     emoji: "🎵",
     description: [
       "面向琵琶学习者和民乐爱好者，解决「想弹的流行曲没有适配琵琶谱」这一核心痛点。上传任意音乐或视频，自动生成三种难度（低/中/高）的琵琶简谱，并支持琵琶音色模拟播放。",
