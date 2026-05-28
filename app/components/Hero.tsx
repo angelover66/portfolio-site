@@ -33,9 +33,7 @@ export default function Hero() {
 
         {/* 一句话介绍 */}
         <p className="text-lg md:text-xl leading-relaxed max-w-lg mx-auto" style={{ color: "rgba(26,26,46,0.6)" }}>
-          5年B端产品经理，转型 AI Agent 开发。
-          <br />
-          用 Vibe Coding 的方式，把产品想法变成可运行的 AI 应用。
+          5年互联网大厂B端AI+产品经理，专注AI赋能业务高效发展，AI深度玩家，Claude Code中毒，热爱通过Vibe Coding把产品直觉变成可运行的应用
         </p>
       </motion.div>
 
