@@ -26,6 +26,20 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/angelover66/interview-agent",
   },
   {
+    id: "daily-mic",
+    name: "Lulu's Daily Mic",
+    tagline: "全球化沟通力养成助手",
+    emoji: "🎙️",
+    description: [
+      "面向雅思6.5分、目标全英文工作环境的AI产品经理，解决「日常口语打卡 + AI PM职业英语」这一垂直场景的练习需求。市面上英语工具或过于基础、或过于学术，缺乏中间地带。",
+      "核心能力：支持YouTube/Bilibili/网页/纯文本四种内容输入，LLM自动生成约2分钟的英文口播脚本，附带中文对照翻译。固定开篇语和结束语建立每日练习仪式感，历史脚本支持搜索和下载。",
+      "额外集成AI PM学习材料定时推送（每日早晚各一次），LLM策展 + URL可访问性验证，macOS系统通知触达。已支持Streamlit Web UI和CLI双交互模式。",
+    ],
+    techTags: ["Python", "Streamlit", "DeepSeek API", "macOS Notification"],
+    liveUrl: "https://english-agent-gp3jehtasegglfowv8grsy.streamlit.app",
+    githubUrl: "https://github.com/angelover66/english-agent",
+  },
+  {
     id: "offerwin",
     name: "OfferWin",
     tagline: "求职面试进度追踪微信小程序",
@@ -41,20 +55,6 @@ export const projects: Project[] = [
     qrcode: "/offerwin-qrcode.jpg",
   },
   {
-    id: "daily-mic",
-    name: "Lulu's Daily Mic",
-    tagline: "全球化沟通力养成助手",
-    emoji: "🎙️",
-    description: [
-      "面向雅思6.5分、目标全英文工作环境的AI产品经理，解决「日常口语打卡 + AI PM职业英语」这一垂直场景的练习需求。市面上英语工具或过于基础、或过于学术，缺乏中间地带。",
-      "核心能力：支持YouTube/Bilibili/网页/纯文本四种内容输入，LLM自动生成约2分钟的英文口播脚本，附带中文对照翻译。固定开篇语和结束语建立每日练习仪式感，历史脚本支持搜索和下载。",
-      "额外集成AI PM学习材料定时推送（每日早晚各一次），LLM策展 + URL可访问性验证，macOS系统通知触达。已支持Streamlit Web UI和CLI双交互模式。",
-    ],
-    techTags: ["Python", "Streamlit", "DeepSeek API", "macOS Notification"],
-    liveUrl: "https://english-agent-gp3jehtasegglfowv8grsy.streamlit.app",
-    githubUrl: "https://github.com/angelover66/english-agent",
-  },
-  {
     id: "pipa-score",
     name: "琵琶简谱自动生成器",
     tagline: "AI 驱动的琵琶谱生成与演奏工具",
@@ -67,19 +67,5 @@ export const projects: Project[] = [
     techTags: ["Next.js", "TypeScript", "Basic Pitch", "ffmpeg.wasm", "Web Audio API", "Tailwind CSS"],
     liveUrl: "https://pipa-score-generator.vercel.app/",
     githubUrl: "https://github.com/angelover66/pipa-score-generator",
-  },
-  {
-    id: "telegram-agent",
-    name: "个人 Telegram AI 助手",
-    tagline: "轻量级 AI 生活助手",
-    emoji: "🤖",
-    description: [
-      "以Telegram Bot为载体，将AI对话、天气查询、定时提醒三大高频日常需求整合到一个聊天窗口，零额外App安装，全平台可用。解决了「需要一个随时可聊的AI入口」的核心诉求。",
-      "核心能力：Claude Sonnet 4.6驱动的智能多轮对话（支持Markdown格式+10轮上下文），和风天气API实时查询+每日7:30主动推送，自然语言定时提醒（支持「明天下午3点开会」等表达）。",
-      "技术实现：python-telegram-bot框架polling模式，SQLite持久化存储提醒数据，无需公网URL或webhook，本地即可运行。多用户chat_id隔离，对话历史和提醒完全独立。",
-    ],
-    techTags: ["Python", "Telegram Bot API", "Claude API", "SQLite"],
-    liveUrl: "https://t.me/lulu_ai_bot",
-    githubUrl: "https://github.com/angelover66/telegram-agent",
   },
 ];
