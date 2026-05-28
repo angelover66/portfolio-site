@@ -47,7 +47,7 @@ export default function Hero() {
 
             {/* 姓名 */}
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4" style={{ color: "#1a1a2e" }}>
-              Lulu Yang 杨露露
+              Lulu Yang
             </h1>
 
             {/* 一句话介绍 */}
