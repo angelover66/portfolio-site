@@ -47,12 +47,12 @@ export default function Hero() {
 
             {/* 姓名 */}
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4" style={{ color: "#1a1a2e" }}>
-              Lulu Yang
+              Lulu Yang 杨露露
             </h1>
 
             {/* 一句话介绍 */}
             <p className="text-lg md:text-xl leading-relaxed max-w-lg" style={{ color: "rgba(26,26,46,0.6)" }}>
-              5年互联网大厂B端AI+产品经理，专注AI赋能业务高效发展，AI深度玩家，Claude Code中毒，热爱通过Vibe Coding把产品直觉变成可运行的应用
+              我是一名拥有5年经验的互联网大厂B端AI 产品经理，专注用 AI 技术赋能企业业务。AI深度玩家，Claude Code资深用户，擅长通过Vibecoding快速实现产品创意，把产品直觉落地为可用应用，持续探索 AI 产品的更多落地形态。
             </p>
           </div>
         </div>
