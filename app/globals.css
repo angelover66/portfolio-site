@@ -10,8 +10,8 @@
 
 /* CSS 自定义属性（供 glass-card 等组件使用） */
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.55);
-  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -20,11 +20,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* 流动渐变背景 — 降低饱和度、放缓动画 */
+/* 流动渐变背景 */
 .gradient-bg {
-  background: linear-gradient(270deg, #eef0ff, #f5efff, #fdf0f7, #eef0ff);
+  background: linear-gradient(270deg, #e0e7ff, #f3e8ff, #fce7f3, #e0e7ff);
   background-size: 400% 400%;
-  animation: gradient-flow 18s ease infinite;
+  animation: gradient-flow 12s ease infinite;
 }
 
 /* 毛玻璃卡片 */
@@ -33,7 +33,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
 }
 
 @keyframes gradient-flow {

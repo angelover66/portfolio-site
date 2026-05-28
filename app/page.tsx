@@ -25,7 +25,7 @@ export default function Home() {
         <p className="text-center mb-8 text-sm" style={{ color: "rgba(26,26,46,0.4)" }}>
           作品集持续更新中
         </p>
-        <div className="flex flex-col gap-5 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, i) => (
             <ProjectCard
               key={project.id}
